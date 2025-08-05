@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="sobreMi.html">Más sobre mí</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="contenido">
+    <h1>Mis Principales Proyectos</h1>
+
+    <section class="proyecto">
+  <h2>🏃 Aplicación para el registro de actividad física de un usuario</h2>
+
+  <p>
+    Este proyecto consiste en una aplicación web desarrollada con <strong>React</strong> que permite a los usuarios registrar y visualizar 
+    su actividad física diaria. El sistema consulta los registros almacenados en un backend remoto, permitiendo calcular el tiempo total de 
+    ejercicio por día, entre otras funcionalidades.
+  </p>
+
+  <h3> Tecnologías y conceptos utilizados:</h3>
+  <ul>
+    <li><strong>React JS:</strong> Construcción de una interfaz dinámica y modular con componentes reutilizables.</li>
+    <li><strong>React Hooks (useState, useEffect):</strong> Gestión de estados locales y efectos secundarios como llamadas a APIs.</li>
+    <li><strong>Fetch API:</strong> Comunicación con un endpoint remoto utilizando credenciales almacenadas en <code>localStorage</code>.</li>
+    <li><strong>Reducción de datos:</strong> Cálculo del tiempo total de entrenamiento con <code>reduce</code> sobre los registros.</li>
+    <li><strong>JavaScript moderno (ES6+):</strong> Uso de funciones flecha, template literals y destructuring para un código claro y eficiente.</li>
+    <li><strong>CSS modular y responsive:</strong> Estilos aislados por componente, adaptados a distintos dispositivos.</li>
+  </ul>
+
+  <h3> Funcionalidades destacadas:</h3>
+  <ul>
+    <li>Cálculo automático del tiempo de entrenamiento diario.</li>
+    <li>Visualización de registros filtrados por fecha.</li>
+    <li>Autenticación básica mediante <code>apikey</code> y <code>userid</code> en headers personalizados.</li>
+    <li>Separación de responsabilidades en componentes como <code>TiempoDiario</code>, <code>Registro</code>, <code>Actividad</code>, entre otros.</li>
+  </ul>
+
+  <h3>Funcionalidades:</h3>
+<div class="galeria">
+  <figure>
+    <figcaption><strong>Registro de usuario:</strong> Introduce username, password y pais.</figcaption>
+    <img src="imgs/actFisica1.png" alt="Pantalla de registro">
+  </figure>
+
+  <figure>
+    <figcaption><strong>Login:</strong> El usuario se loguea con sus credenciales.</figcaption>
+    <img src="imgs/actFisica2.png" alt="Login">
+  </figure>
+
+  <figure>
+    <figcaption><strong>Cargar actividad física y mis registros:</strong> El usuario selecciona la actividad realizada, la fecha y la duración de la misma. Luego 
+        carga la actividad y se agrega en los registros. Además puede ver los registros de actividad y filtrarlos por fecha.</figcaption>
+    <img src="imgs/actFisica4.png" alt= "Cargar actividad y registro">
+  </figure>
+
+  <figure>
+    <figcaption><strong>Tiempo registrado:</strong> Tiempo registrado de hoy y tiempo total registrado.</figcaption>
+    <img src="imgs/actFisica5.png" alt="Tiempo registrado">
+  </figure>
+
+  <figure>
+    <figcaption><strong>Gráfico de sesiones por actividad:</strong> Cantidad de sesiones por actividad realizada.</figcaption>
+    <img src="imgs/actFisica6.png" alt="Grafico sesiones.">
+  </figure>
+
+  <figure>
+    <figcaption><strong>Gráfico de minutos de ejercicio:</strong> Minutos de ejercicio realizado en los últimos 7 días.</figcaption>
+    <img src="imgs/actFisica7.png" alt="Gráfico minutos">
+  </figure>
+
+  <figure>
+    <figcaption><strong>Mensaje de evolución personal:</strong> El usuario recibe un mensaje de aliento o de felicitaciones dependiendo
+        de si ha alcanzado los minutos ideales de ejercicio por día.</figcaption>
+    <img src="imgs/actFisica8.png" alt="Mensaje al usuario">
+  </figure>
+</div>
+
+</section>
+
+<section class="proyecto">
+  <h2>✈️ Sistema de Gestión de Viajeros y Vuelos</h2>
+
+  <p>
+    Este proyecto es un sistema desarrollado en <strong>Java</strong> que permite registrar y gestionar viajeros, ciudades, conexiones y vuelos,
+    con funcionalidades avanzadas de búsqueda y cálculo de rutas óptimas entre ciudades. El backend está basado en estructuras de datos
+    como árboles binarios de búsqueda (ABB) y grafos dirigidos.
+  </p>
+
+  <h3> Tecnologías y conceptos utilizados:</h3>
+  <ul>
+    <li><strong>Java 17:</strong> Implementación robusta orientada a objetos con manejo de excepciones y validaciones.</li>
+    <li><strong>Estructuras de datos:</strong> Uso de ABB para ordenamiento eficiente y búsquedas O(log n).</li>
+    <li><strong>Grafos dirigidos:</strong> Modelado de ciudades y conexiones, con vuelos como aristas múltiples.</li>
+    <li><strong>Algoritmo de Dijkstra:</strong> Cálculo de rutas de costo mínimo según distintos criterios (tiempo, costo).</li>
+    <li><strong>Validaciones:</strong> Uso de expresiones regulares para formatos de cédula y correo electrónico, control de errores.</li>
+  </ul>
+
+  <h3> Funcionalidades destacadas:</h3>
+  <ul>
+    <li>Registro y búsqueda eficiente de viajeros por cédula o correo.</li>
+    <li>Registro de ciudades y conexiones con control de duplicados.</li>
+    <li>Gestión de vuelos con actualización y verificación de unicidad.</li>
+    <li>Cálculo de rutas óptimas basadas en minutos o costo en dólares, con filtros por tipo de vuelo permitido.</li>
+    <li>Listados ordenados de viajeros por diferentes criterios (cédula, correo, categoría, rango etario).</li>
+  </ul>
+
+  <div class="galeria">
+    <figure>
+      <figcaption><strong>Sistema: </strong> Código limpio</figcaption>
+      <img src="imgs/sistemaDeAerolineas3.png" alt="sistema" />
+    </figure>
+  </div>
+  <div class="galeria">
+    <figure>
+      <figcaption><strong>Estructuras:</strong></figcaption>
+      <img src="imgs/sistemaDeAerolineas2.png" alt="estructuras" />
+    </figure>
+  </div>
+  <div class="galeria">
+    <figure>
+      <figcaption><strong>Testing:</strong></figcaption>
+      <img src="imgs/sistemaDeAerolineas.png" alt="testing" />
+    </figure>
+  </div>
+</section>
+
+
+
+<section class="proyecto">
+  <h2>🍽️ Sistema de gestión de pedidos para restaurante</h2>
+
+  <p>
+    Aplicación de escritorio desarrollada en <strong>Java con NetBeans</strong> para gestionar los pedidos en un restaurante. Permite a los
+     clientes seleccionar productos del menú, agregar comentarios personalizados y confirmar pedidos, mientras que el sistema realiza el cálculo
+      automático de los montos y descuentos aplicables.  
+    El sistema aplica principios de diseño orientado a objetos como <strong>Polimorfismo</strong>, <strong>State</strong>, 
+    <strong>Strategy</strong>, <strong>Experto</strong> y una clara <strong>división lógica en capas</strong> (UI, Controladores, Lógica).
+  </p>
+
+  <p>
+    Además de la interfaz para clientes, el sistema incluye una interfaz específica para <strong>gestores</strong>, quienes reciben los pedidos 
+    confirmados, los procesan marcándolos como <em>"realizados"</em> y luego como <em>"entregados"</em>. Esta funcionalidad permite un control 
+    del flujo de trabajo desde que el cliente realiza el pedido hasta que es entregado.
+  </p>
+
+  <h3> Tecnologías y conceptos utilizados:</h3>
+  <ul>
+    <li><strong>Java + Swing:</strong> Interfaces gráficas para escritorio con eventos y formularios interactivos.</li>
+    <li><strong>NetBeans IDE:</strong> Organización en paquetes y desarrollo orientado a eventos.</li>
+    <li><strong>Polimorfismo:</strong> Implementado con patrones <code>State</code> y <code>Strategy</code> para el comportamiento de descuentos 
+      y tipos de cliente.</li>
+    <li><strong>Patrón Experto:</strong> Encapsulación de la lógica de negocio en clases expertas como <code>Gestor</code> y <code>Pedido</code>.
+    </li>
+    <li><strong>Arquitectura por capas:</strong> Separación entre IU, controladores, lógica de negocio y datos de prueba.</li>
+  </ul>
+
+  <h3> Funcionalidades destacadas:</h3>
+  <ul>
+    <li>Login de clientes mediante número y contraseña.</li>
+    <li>Visualización del menú clasificado por categorías.</li>
+    <li>Agregado de pedidos con comentarios personalizados.</li>
+    <li>Cálculo de monto total, descuentos y beneficios según tipo de cliente.</li>
+    <li>Aplicación de promociones.</li>
+    <li>Interfaz para gestores: toma, realización y entrega de pedidos.</li>
+    <li>Observador para notificación de cambios en unidades de cocina, gestores o estados de los pedidos y asignaciones.</li>
+  </ul>
+
+  <div class="galeria">
+    <figure>
+    <figcaption><strong>Interfaz de cliente:</strong> El cliente puede realizar pedidos luego de loguearse.</figcaption>
+    <img src="imgs/restauranteInterfazCliente2.png" alt="Interfaz Cliente">
+  </figure>
+
+  <figure>
+    <figcaption><strong>Interfaz de gestor de unidad de pedidos:</strong> El cliente inicia sesión, selecciona ítems del menú y visualiza 
+      el pedido completo con totales y beneficios aplicados.</figcaption>
+      <img src="imgs/restauranteInterfazGestor2.png" alt="Interfaz Gestor Pedidos1">
+    <img src="imgs/restauranteInterfazGestor1.png" alt="Interfaz Gestor Pedidos2">
+  </figure>
+
+</section>
+
+
+  </main>
+</body>
+</html>
