@@ -1,206 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
   <nav>
     <div class="nav-container">
       <a href="index.html" class="logo">Portfolio</a>
       <ul class="nav-links">
-
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="sobreMi.html">Más sobre mí</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="proyectos.html">Projects</a></li>
+        <li><a href="sobreMi.html">About Me</a></li>
       </ul>
       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </div>
   </nav>
 
   <main class="contenido">
-    <h1>Mis Principales Proyectos</h1>
+    <h1> Main Projects</h1>
 
+    <!-- Project 1 -->
     <section class="proyecto">
-  <h2>🏃 Aplicación para el registro de actividad física de un usuario</h2>
+      <h2>🏃 Physical Activity Tracking App</h2>
+      <p>
+        This project is a web application built with <strong>React</strong> that allows users to log and view their daily physical activities.
+        The system fetches stored records from a remote backend, allowing features like total workout time per day, among others.
+      </p>
 
-  <p>
-    Este proyecto consiste en una aplicación web desarrollada con <strong>React</strong> que permite a los usuarios registrar y visualizar 
-    su actividad física diaria. El sistema consulta los registros almacenados en un backend remoto, permitiendo calcular el tiempo total de 
-    ejercicio por día, entre otras funcionalidades.
-  </p>
+      <h3>Technologies and Concepts Used:</h3>
+      <ul>
+        <li><strong>React JS:</strong> Dynamic and modular interface with reusable components.</li>
+        <li><strong>React Hooks (useState, useEffect):</strong> Local state management and side effects such as API calls.</li>
+        <li><strong>Fetch API:</strong> Communication with a remote endpoint using credentials stored in <code>localStorage</code>.</li>
+        <li><strong>Data Reduction:</strong> Total workout time calculated using <code>reduce</code> on the activity log.</li>
+        <li><strong>Modern JavaScript (ES6+):</strong> Use of arrow functions, template literals, and destructuring for clean and efficient code.</li>
+        <li><strong>Modular and Responsive CSS:</strong> Component-scoped styles adapted to various devices.</li>
+      </ul>
 
-  <h3> Tecnologías y conceptos utilizados:</h3>
-  <ul>
-    <li><strong>React JS:</strong> Construcción de una interfaz dinámica y modular con componentes reutilizables.</li>
-    <li><strong>React Hooks (useState, useEffect):</strong> Gestión de estados locales y efectos secundarios como llamadas a APIs.</li>
-    <li><strong>Fetch API:</strong> Comunicación con un endpoint remoto utilizando credenciales almacenadas en <code>localStorage</code>.</li>
-    <li><strong>Reducción de datos:</strong> Cálculo del tiempo total de entrenamiento con <code>reduce</code> sobre los registros.</li>
-    <li><strong>JavaScript moderno (ES6+):</strong> Uso de funciones flecha, template literals y destructuring para un código claro y eficiente.</li>
-    <li><strong>CSS modular y responsive:</strong> Estilos aislados por componente, adaptados a distintos dispositivos.</li>
-  </ul>
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Automatic calculation of daily workout time.</li>
+        <li>Filtered record visualization by date.</li>
+        <li>Basic authentication using <code>apikey</code> and <code>userid</code> in custom headers.</li>
+        <li>Component separation: <code>DailyTime</code>, <code>Log</code>, <code>Activity</code>, etc.</li>
+      </ul>
 
-  <h3> Funcionalidades destacadas:</h3>
-  <ul>
-    <li>Cálculo automático del tiempo de entrenamiento diario.</li>
-    <li>Visualización de registros filtrados por fecha.</li>
-    <li>Autenticación básica mediante <code>apikey</code> y <code>userid</code> en headers personalizados.</li>
-    <li>Separación de responsabilidades en componentes como <code>TiempoDiario</code>, <code>Registro</code>, <code>Actividad</code>, entre otros.</li>
-  </ul>
+      <h3>Functionalities:</h3>
+      <div class="galeria">
+        <figure>
+          <figcaption><strong>User registration:</strong> Enter username, password, and country.</figcaption>
+          <img src="imgs/actFisica1.png" alt="Registration screen">
+        </figure>
 
-  <h3>Funcionalidades:</h3>
-<div class="galeria">
-  <figure>
-    <figcaption><strong>Registro de usuario:</strong> Introduce username, password y pais.</figcaption>
-    <img src="imgs/actFisica1.png" alt="Pantalla de registro">
-  </figure>
+        <figure>
+          <figcaption><strong>Login:</strong> The user logs in with their credentials.</figcaption>
+          <img src="imgs/actFisica2.png" alt="Login screen">
+        </figure>
 
-  <figure>
-    <figcaption><strong>Login:</strong> El usuario se loguea con sus credenciales.</figcaption>
-    <img src="imgs/actFisica2.png" alt="Login">
-  </figure>
+        <figure>
+          <figcaption><strong>Log physical activity and view records:</strong> The user selects the activity, date, and duration. Activities are added to the log and can be filtered by date.</figcaption>
+          <img src="imgs/actFisica4.png" alt="Activity input and log">
+        </figure>
 
-  <figure>
-    <figcaption><strong>Cargar actividad física y mis registros:</strong> El usuario selecciona la actividad realizada, la fecha y la duración de la misma. Luego 
-        carga la actividad y se agrega en los registros. Además puede ver los registros de actividad y filtrarlos por fecha.</figcaption>
-    <img src="imgs/actFisica4.png" alt= "Cargar actividad y registro">
-  </figure>
+        <figure>
+          <figcaption><strong>Time tracked:</strong> Today's time and total tracked time.</figcaption>
+          <img src="imgs/actFisica5.png" alt="Time tracked">
+        </figure>
 
-  <figure>
-    <figcaption><strong>Tiempo registrado:</strong> Tiempo registrado de hoy y tiempo total registrado.</figcaption>
-    <img src="imgs/actFisica5.png" alt="Tiempo registrado">
-  </figure>
+        <figure>
+          <figcaption><strong>Activity session chart:</strong> Number of sessions per activity type.</figcaption>
+          <img src="imgs/actFisica6.png" alt="Activity chart">
+        </figure>
 
-  <figure>
-    <figcaption><strong>Gráfico de sesiones por actividad:</strong> Cantidad de sesiones por actividad realizada.</figcaption>
-    <img src="imgs/actFisica6.png" alt="Grafico sesiones.">
-  </figure>
+        <figure>
+          <figcaption><strong>Exercise time chart:</strong> Minutes exercised in the last 7 days.</figcaption>
+          <img src="imgs/actFisica7.png" alt="Minutes chart">
+        </figure>
 
-  <figure>
-    <figcaption><strong>Gráfico de minutos de ejercicio:</strong> Minutos de ejercicio realizado en los últimos 7 días.</figcaption>
-    <img src="imgs/actFisica7.png" alt="Gráfico minutos">
-  </figure>
+        <figure>
+          <figcaption><strong>Motivational message:</strong> The user receives encouragement or congratulations depending on whether they reached the recommended daily exercise time.</figcaption>
+          <img src="imgs/actFisica8.png" alt="User message">
+        </figure>
+      </div>
+    </section>
 
-  <figure>
-    <figcaption><strong>Mensaje de evolución personal:</strong> El usuario recibe un mensaje de aliento o de felicitaciones dependiendo
-        de si ha alcanzado los minutos ideales de ejercicio por día.</figcaption>
-    <img src="imgs/actFisica8.png" alt="Mensaje al usuario">
-  </figure>
-</div>
+    <!-- Project 2 -->
+    <section class="proyecto">
+      <h2>✈️ Travel and Flight Management System</h2>
+      <p>
+        This project is a <strong>Java</strong> system that manages travelers, cities, connections, and flights,
+        with advanced search and optimal route calculation features. The backend is based on data structures like
+        binary search trees (BST) and directed graphs.
+      </p>
 
-</section>
+      <h3>Technologies and Concepts Used:</h3>
+      <ul>
+        <li><strong>Java 17:</strong> Object-oriented implementation with exception handling and validations.</li>
+        <li><strong>Data Structures:</strong> BSTs for efficient ordering and O(log n) lookups.</li>
+        <li><strong>Directed Graphs:</strong> Cities and connections modeled with flights as multi-edges.</li>
+        <li><strong>Dijkstra's Algorithm:</strong> Optimal route calculations based on time or cost.</li>
+        <li><strong>Validation:</strong> Regex for ID and email formats, and error control.</li>
+      </ul>
 
-<section class="proyecto">
-  <h2>✈️ Sistema de Gestión de Viajeros y Vuelos</h2>
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Efficient search of travelers by ID or email.</li>
+        <li>City and connection registration with duplicate checks.</li>
+        <li>Flight management with uniqueness validation and updates.</li>
+        <li>Optimal route calculation by time or cost, with filters for allowed flight types.</li>
+        <li>Sorted listings of travelers by ID, email, category, or age range.</li>
+      </ul>
 
-  <p>
-    Este proyecto es un sistema desarrollado en <strong>Java</strong> que permite registrar y gestionar viajeros, ciudades, conexiones y vuelos,
-    con funcionalidades avanzadas de búsqueda y cálculo de rutas óptimas entre ciudades. El backend está basado en estructuras de datos
-    como árboles binarios de búsqueda (ABB) y grafos dirigidos.
-  </p>
+      <div class="galeria">
+        <figure>
+          <figcaption><strong>System</strong></figcaption>
+          <img src="imgs/sistemaDeAerolineas3.png" alt="System screenshot" />
+        </figure>
+        <figure>
+          <figcaption><strong>Data structures</strong></figcaption>
+          <img src="imgs/sistemaDeAerolineas2.png" alt="Structures" />
+        </figure>
+        <figure>
+          <figcaption><strong>Testing</strong></figcaption>
+          <img src="imgs/sistemaDeAerolineas.png" alt="Testing screenshot" />
+        </figure>
+      </div>
+    </section>
 
-  <h3> Tecnologías y conceptos utilizados:</h3>
-  <ul>
-    <li><strong>Java 17:</strong> Implementación robusta orientada a objetos con manejo de excepciones y validaciones.</li>
-    <li><strong>Estructuras de datos:</strong> Uso de ABB para ordenamiento eficiente y búsquedas O(log n).</li>
-    <li><strong>Grafos dirigidos:</strong> Modelado de ciudades y conexiones, con vuelos como aristas múltiples.</li>
-    <li><strong>Algoritmo de Dijkstra:</strong> Cálculo de rutas de costo mínimo según distintos criterios (tiempo, costo).</li>
-    <li><strong>Validaciones:</strong> Uso de expresiones regulares para formatos de cédula y correo electrónico, control de errores.</li>
-  </ul>
+    <!-- Project 3 -->
+    <section class="proyecto">
+      <h2>🍽️ Restaurant Order Management System</h2>
+      <p>
+        Desktop application developed in <strong>Java with NetBeans</strong> to manage restaurant orders. Customers can select menu items,
+        add custom comments, and confirm orders, while the system automatically calculates totals and applicable discounts.  
+        The system follows object-oriented principles such as <strong>Polymorphism</strong>, <strong>State</strong>, 
+        <strong>Strategy</strong>, <strong>Expert</strong>, and a clear <strong>layered architecture</strong> (UI, Controllers, Logic).
+      </p>
 
-  <h3> Funcionalidades destacadas:</h3>
-  <ul>
-    <li>Registro y búsqueda eficiente de viajeros por cédula o correo.</li>
-    <li>Registro de ciudades y conexiones con control de duplicados.</li>
-    <li>Gestión de vuelos con actualización y verificación de unicidad.</li>
-    <li>Cálculo de rutas óptimas basadas en minutos o costo en dólares, con filtros por tipo de vuelo permitido.</li>
-    <li>Listados ordenados de viajeros por diferentes criterios (cédula, correo, categoría, rango etario).</li>
-  </ul>
+      <p>
+        Besides the client interface, the system includes a specific interface for <strong>managers</strong>, who receive confirmed orders,
+        process them by marking as <em>"prepared"</em> and then as <em>"delivered"</em>. This provides full control of the workflow from order to delivery.
+      </p>
 
-  <div class="galeria">
-    <figure>
-      <figcaption><strong>Sistema: </strong> Código limpio</figcaption>
-      <img src="imgs/sistemaDeAerolineas3.png" alt="sistema" />
-    </figure>
-  </div>
-  <div class="galeria">
-    <figure>
-      <figcaption><strong>Estructuras:</strong></figcaption>
-      <img src="imgs/sistemaDeAerolineas2.png" alt="estructuras" />
-    </figure>
-  </div>
-  <div class="galeria">
-    <figure>
-      <figcaption><strong>Testing:</strong></figcaption>
-      <img src="imgs/sistemaDeAerolineas.png" alt="testing" />
-    </figure>
-  </div>
-</section>
+      <h3>Technologies and Concepts Used:</h3>
+      <ul>
+        <li><strong>Java + Swing:</strong> Desktop GUI with event handling and interactive forms.</li>
+        <li><strong>NetBeans IDE:</strong> Organized in packages and event-driven development.</li>
+        <li><strong>Polymorphism:</strong> Implemented with <code>State</code> and <code>Strategy</code> patterns for discounts and customer types.</li>
+        <li><strong>Expert Pattern:</strong> Business logic encapsulated in expert classes like <code>Manager</code> and <code>Order</code>.</li>
+        <li><strong>Layered Architecture:</strong> Separation between UI, controllers, business logic, and mock data.</li>
+      </ul>
 
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Client login with number and password.</li>
+        <li>Menu categorized by food types.</li>
+        <li>Order placement with custom comments.</li>
+        <li>Automatic total, discount, and benefits calculation based on customer type.</li>
+        <li>Promotions applied dynamically.</li>
+        <li>Manager interface: order processing and delivery tracking.</li>
+        <li>Observer for real-time updates on kitchen units, managers, and order statuses.</li>
+      </ul>
 
+      <div class="galeria">
+        <figure>
+          <figcaption><strong>Client interface:</strong> The customer can place orders after logging in.</figcaption>
+          <img src="imgs/restauranteInterfazCliente2.png" alt="Client interface">
+        </figure>
 
-<section class="proyecto">
-  <h2>🍽️ Sistema de gestión de pedidos para restaurante</h2>
-
-  <p>
-    Aplicación de escritorio desarrollada en <strong>Java con NetBeans</strong> para gestionar los pedidos en un restaurante. Permite a los
-     clientes seleccionar productos del menú, agregar comentarios personalizados y confirmar pedidos, mientras que el sistema realiza el cálculo
-      automático de los montos y descuentos aplicables.  
-    El sistema aplica principios de diseño orientado a objetos como <strong>Polimorfismo</strong>, <strong>State</strong>, 
-    <strong>Strategy</strong>, <strong>Experto</strong> y una clara <strong>división lógica en capas</strong> (UI, Controladores, Lógica).
-  </p>
-
-  <p>
-    Además de la interfaz para clientes, el sistema incluye una interfaz específica para <strong>gestores</strong>, quienes reciben los pedidos 
-    confirmados, los procesan marcándolos como <em>"realizados"</em> y luego como <em>"entregados"</em>. Esta funcionalidad permite un control 
-    del flujo de trabajo desde que el cliente realiza el pedido hasta que es entregado.
-  </p>
-
-  <h3> Tecnologías y conceptos utilizados:</h3>
-  <ul>
-    <li><strong>Java + Swing:</strong> Interfaces gráficas para escritorio con eventos y formularios interactivos.</li>
-    <li><strong>NetBeans IDE:</strong> Organización en paquetes y desarrollo orientado a eventos.</li>
-    <li><strong>Polimorfismo:</strong> Implementado con patrones <code>State</code> y <code>Strategy</code> para el comportamiento de descuentos 
-      y tipos de cliente.</li>
-    <li><strong>Patrón Experto:</strong> Encapsulación de la lógica de negocio en clases expertas como <code>Gestor</code> y <code>Pedido</code>.
-    </li>
-    <li><strong>Arquitectura por capas:</strong> Separación entre IU, controladores, lógica de negocio y datos de prueba.</li>
-  </ul>
-
-  <h3> Funcionalidades destacadas:</h3>
-  <ul>
-    <li>Login de clientes mediante número y contraseña.</li>
-    <li>Visualización del menú clasificado por categorías.</li>
-    <li>Agregado de pedidos con comentarios personalizados.</li>
-    <li>Cálculo de monto total, descuentos y beneficios según tipo de cliente.</li>
-    <li>Aplicación de promociones.</li>
-    <li>Interfaz para gestores: toma, realización y entrega de pedidos.</li>
-    <li>Observador para notificación de cambios en unidades de cocina, gestores o estados de los pedidos y asignaciones.</li>
-  </ul>
-
-  <div class="galeria">
-    <figure>
-    <figcaption><strong>Interfaz de cliente:</strong> El cliente puede realizar pedidos luego de loguearse.</figcaption>
-    <img src="imgs/restauranteInterfazCliente2.png" alt="Interfaz Cliente">
-  </figure>
-
-  <figure>
-    <figcaption><strong>Interfaz de gestor de unidad de pedidos:</strong> El cliente inicia sesión, selecciona ítems del menú y visualiza 
-      el pedido completo con totales y beneficios aplicados.</figcaption>
-      <img src="imgs/restauranteInterfazGestor2.png" alt="Interfaz Gestor Pedidos1">
-    <img src="imgs/restauranteInterfazGestor1.png" alt="Interfaz Gestor Pedidos2">
-  </figure>
-
-</section>
-
-
+        <figure>
+          <figcaption><strong>Manager order interface:</strong> The client logs in, selects menu items, and sees the complete order with totals and benefits applied.</figcaption>
+          <img src="imgs/restauranteInterfazGestor2.png" alt="Manager Interface 1">
+          <img src="imgs/restauranteInterfazGestor1.png" alt="Manager Interface 2">
+        </figure>
+      </div>
+    </section>
   </main>
 
-<script src="script.js"></script>
-
-
-
+  <script src="script.js"></script>
 </body>
 </html>
