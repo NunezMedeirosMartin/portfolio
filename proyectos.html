@@ -1,185 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
-  <link rel="stylesheet" href="estilos.css" />
-</head>
-<body>
-  <nav>
-    <div class="nav-container">
-      <a href="index.html" class="logo">Portfolio</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="proyectos.html">Projects</a></li>
-        <li><a href="sobreMi.html">About Me</a></li>
-      </ul>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    </div>
-  </nav>
-
-  <main class="contenido">
-    <h1> Main Projects</h1>
-
-    <!-- Project 1 -->
-    <section class="proyecto">
-      <h2>🏃 Physical Activity Tracking App</h2>
-      <p>
-        This project is a web application built with <strong>React</strong> that allows users to log and view their daily physical activities.
-        The system fetches stored records from a remote backend, allowing features like total workout time per day, among others.
-      </p>
-
-      <h3>Technologies and Concepts Used:</h3>
-      <ul>
-        <li><strong>React JS:</strong> Dynamic and modular interface with reusable components.</li>
-        <li><strong>React Hooks (useState, useEffect):</strong> Local state management and side effects such as API calls.</li>
-        <li><strong>Fetch API:</strong> Communication with a remote endpoint using credentials stored in <code>localStorage</code>.</li>
-        <li><strong>Data Reduction:</strong> Total workout time calculated using <code>reduce</code> on the activity log.</li>
-        <li><strong>Modern JavaScript (ES6+):</strong> Use of arrow functions, template literals, and destructuring for clean and efficient code.</li>
-        <li><strong>Modular and Responsive CSS:</strong> Component-scoped styles adapted to various devices.</li>
-      </ul>
-
-      <h3>Key Features:</h3>
-      <ul>
-        <li>Automatic calculation of daily workout time.</li>
-        <li>Filtered record visualization by date.</li>
-        <li>Basic authentication using <code>apikey</code> and <code>userid</code> in custom headers.</li>
-        <li>Component separation: <code>DailyTime</code>, <code>Log</code>, <code>Activity</code>, etc.</li>
-      </ul>
-
-      <h3>Functionalities:</h3>
-      <div class="galeria">
-        <figure>
-          <figcaption><strong>User registration:</strong> Enter username, password, and country.</figcaption>
-          <img src="imgs/actFisica1.png" alt="Registration screen">
-        </figure>
-
-        <figure>
-          <figcaption><strong>Login:</strong> The user logs in with their credentials.</figcaption>
-          <img src="imgs/actFisica2.png" alt="Login screen">
-        </figure>
-
-        <figure>
-          <figcaption><strong>Log physical activity and view records:</strong> The user selects the activity, date, and duration. Activities are added to the log and can be filtered by date.</figcaption>
-          <img src="imgs/actFisica4.png" alt="Activity input and log">
-        </figure>
-
-        <figure>
-          <figcaption><strong>Time tracked:</strong> Today's time and total tracked time.</figcaption>
-          <img src="imgs/actFisica5.png" alt="Time tracked">
-        </figure>
-
-        <figure>
-          <figcaption><strong>Activity session chart:</strong> Number of sessions per activity type.</figcaption>
-          <img src="imgs/actFisica6.png" alt="Activity chart">
-        </figure>
-
-        <figure>
-          <figcaption><strong>Exercise time chart:</strong> Minutes exercised in the last 7 days.</figcaption>
-          <img src="imgs/actFisica7.png" alt="Minutes chart">
-        </figure>
-
-        <figure>
-          <figcaption><strong>Motivational message:</strong> The user receives encouragement or congratulations depending on whether they reached the recommended daily exercise time.</figcaption>
-          <img src="imgs/actFisica8.png" alt="User message">
-        </figure>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">Portfolio</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="proyectos.html">Projects</a></li>
+          <li><a href="sobreMi.html">About Me</a></li>
+        </ul>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
       </div>
-    </section>
+    </nav>
 
-    <!-- Project 2 -->
-    <section class="proyecto">
-      <h2>✈️ Travel and Flight Management System</h2>
-      <p>
-        This project is a <strong>Java</strong> system that manages travelers, cities, connections, and flights,
-        with advanced search and optimal route calculation features. The backend is based on data structures like
-        binary search trees (BST) and directed graphs.
-      </p>
+    <main class="contenido">
+      <h1>Main Projects</h1>
 
-      <h3>Technologies and Concepts Used:</h3>
-      <ul>
-        <li><strong>Java 17:</strong> Object-oriented implementation with exception handling and validations.</li>
-        <li><strong>Data Structures:</strong> BSTs for efficient ordering and O(log n) lookups.</li>
-        <li><strong>Directed Graphs:</strong> Cities and connections modeled with flights as multi-edges.</li>
-        <li><strong>Dijkstra's Algorithm:</strong> Optimal route calculations based on time or cost.</li>
-        <li><strong>Validation:</strong> Regex for ID and email formats, and error control.</li>
-      </ul>
+      <!-- Project 1 -->
+      <section class="proyecto">
+        <h2>🏃 Physical Activity Tracking App</h2>
+        <p>
+          This project is a web application built with
+          <strong>React</strong> that allows users to log and view their daily
+          physical activities. The system fetches stored records from a remote
+          backend, allowing features like total workout time per day, among
+          others.
+        </p>
 
-      <h3>Key Features:</h3>
-      <ul>
-        <li>Efficient search of travelers by ID or email.</li>
-        <li>City and connection registration with duplicate checks.</li>
-        <li>Flight management with uniqueness validation and updates.</li>
-        <li>Optimal route calculation by time or cost, with filters for allowed flight types.</li>
-        <li>Sorted listings of travelers by ID, email, category, or age range.</li>
-      </ul>
+        <h3>Technologies and Concepts Used:</h3>
+        <ul>
+          <li>
+            <strong>React JS:</strong> Dynamic and modular interface with
+            reusable components.
+          </li>
+          <li>
+            <strong>React Hooks (useState, useEffect):</strong> Local state
+            management and side effects such as API calls.
+          </li>
+          <li>
+            <strong>Fetch API:</strong> Communication with a remote endpoint
+            using credentials stored in <code>localStorage</code>.
+          </li>
+          <li>
+            <strong>Data Reduction:</strong> Total workout time calculated using
+            <code>reduce</code> on the activity log.
+          </li>
+          <li>
+            <strong>Modern JavaScript (ES6+):</strong> Use of arrow functions,
+            template literals, and destructuring for clean and efficient code.
+          </li>
+          <li>
+            <strong>Modular and Responsive CSS:</strong> Component-scoped styles
+            adapted to various devices.
+          </li>
+        </ul>
 
-      <div class="galeria">
-        <figure>
-          <figcaption><strong>System</strong></figcaption>
-          <img src="imgs/sistemaDeAerolineas3.png" alt="System screenshot" />
-        </figure>
-        <figure>
-          <figcaption><strong>Data structures</strong></figcaption>
-          <img src="imgs/sistemaDeAerolineas2.png" alt="Structures" />
-        </figure>
-        <figure>
-          <figcaption><strong>Testing</strong></figcaption>
-          <img src="imgs/sistemaDeAerolineas.png" alt="Testing screenshot" />
-        </figure>
-      </div>
-    </section>
+        <h3>Key Features:</h3>
+        <ul>
+          <li>Automatic calculation of daily workout time.</li>
+          <li>Filtered record visualization by date.</li>
+          <li>
+            Basic authentication using <code>apikey</code> and
+            <code>userid</code> in custom headers.
+          </li>
+          <li>
+            Component separation: <code>DailyTime</code>, <code>Log</code>,
+            <code>Activity</code>, etc.
+          </li>
+        </ul>
 
-    <!-- Project 3 -->
-    <section class="proyecto">
-      <h2>🍽️ Restaurant Order Management System</h2>
-      <p>
-        Desktop application developed in <strong>Java with NetBeans</strong> to manage restaurant orders. Customers can select menu items,
-        add custom comments, and confirm orders, while the system automatically calculates totals and applicable discounts.  
-        The system follows object-oriented principles such as <strong>Polymorphism</strong>, <strong>State</strong>, 
-        <strong>Strategy</strong>, <strong>Expert</strong>, and a clear <strong>layered architecture</strong> (UI, Controllers, Logic).
-      </p>
+        <h3>Functionalities:</h3>
+        <div class="galeria">
+          <figure>
+            <figcaption>
+              <strong>User registration:</strong> Enter username, password, and
+              country.
+            </figcaption>
+            <img src="imgs/actFisica1.png" alt="Registration screen" />
+          </figure>
 
-      <p>
-        Besides the client interface, the system includes a specific interface for <strong>managers</strong>, who receive confirmed orders,
-        process them by marking as <em>"prepared"</em> and then as <em>"delivered"</em>. This provides full control of the workflow from order to delivery.
-      </p>
+          <figure>
+            <figcaption>
+              <strong>Login:</strong> The user logs in with their credentials.
+            </figcaption>
+            <img src="imgs/actFisica2.png" alt="Login screen" />
+          </figure>
 
-      <h3>Technologies and Concepts Used:</h3>
-      <ul>
-        <li><strong>Java + Swing:</strong> Desktop GUI with event handling and interactive forms.</li>
-        <li><strong>NetBeans IDE:</strong> Organized in packages and event-driven development.</li>
-        <li><strong>Polymorphism:</strong> Implemented with <code>State</code> and <code>Strategy</code> patterns for discounts and customer types.</li>
-        <li><strong>Expert Pattern:</strong> Business logic encapsulated in expert classes like <code>Manager</code> and <code>Order</code>.</li>
-        <li><strong>Layered Architecture:</strong> Separation between UI, controllers, business logic, and mock data.</li>
-      </ul>
+          <figure>
+            <figcaption>
+              <strong>Log physical activity and view records:</strong> The user
+              selects the activity, date, and duration. Activities are added to
+              the log and can be filtered by date.
+            </figcaption>
+            <img src="imgs/actFisica4.png" alt="Activity input and log" />
+          </figure>
 
-      <h3>Key Features:</h3>
-      <ul>
-        <li>Client login with number and password.</li>
-        <li>Menu categorized by food types.</li>
-        <li>Order placement with custom comments.</li>
-        <li>Automatic total, discount, and benefits calculation based on customer type.</li>
-        <li>Promotions applied dynamically.</li>
-        <li>Manager interface: order processing and delivery tracking.</li>
-        <li>Observer for real-time updates on kitchen units, managers, and order statuses.</li>
-      </ul>
+          <figure>
+            <figcaption>
+              <strong>Time tracked:</strong> Today's time and total tracked
+              time.
+            </figcaption>
+            <img src="imgs/actFisica5.png" alt="Time tracked" />
+          </figure>
 
-      <div class="galeria">
-        <figure>
-          <figcaption><strong>Client interface:</strong> The customer can place orders after logging in.</figcaption>
-          <img src="imgs/restauranteInterfazCliente2.png" alt="Client interface">
-        </figure>
+          <figure>
+            <figcaption>
+              <strong>Activity session chart:</strong> Number of sessions per
+              activity type.
+            </figcaption>
+            <img src="imgs/actFisica6.png" alt="Activity chart" />
+          </figure>
 
-        <figure>
-          <figcaption><strong>Manager order interface:</strong> The client logs in, selects menu items, and sees the complete order with totals and benefits applied.</figcaption>
-          <img src="imgs/restauranteInterfazGestor2.png" alt="Manager Interface 1">
-          <img src="imgs/restauranteInterfazGestor1.png" alt="Manager Interface 2">
-        </figure>
-      </div>
-    </section>
-  </main>
+          <figure>
+            <figcaption>
+              <strong>Exercise time chart:</strong> Minutes exercised in the
+              last 7 days.
+            </figcaption>
+            <img src="imgs/actFisica7.png" alt="Minutes chart" />
+          </figure>
 
-  <script src="script.js"></script>
-</body>
+          <figure>
+            <figcaption>
+              <strong>Motivational message:</strong> The user receives
+              encouragement or congratulations depending on whether they reached
+              the recommended daily exercise time.
+            </figcaption>
+            <img src="imgs/actFisica8.png" alt="User message" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Project 2 -->
+      <section class="proyecto">
+        <h2>✈️ Travel and Flight Management System</h2>
+        <p>
+          This project is a <strong>Java</strong> system that manages travelers,
+          cities, connections, and flights, with advanced search and optimal
+          route calculation features. The backend is based on data structures
+          like binary search trees (BST) and directed graphs.
+        </p>
+
+        <h3>Technologies and Concepts Used:</h3>
+        <ul>
+          <li>
+            <strong>Java 17:</strong> Object-oriented implementation with
+            exception handling and validations.
+          </li>
+          <li>
+            <strong>Data Structures:</strong> BSTs for efficient ordering and
+            O(log n) lookups.
+          </li>
+          <li>
+            <strong>Directed Graphs:</strong> Cities and connections modeled
+            with flights as multi-edges.
+          </li>
+          <li>
+            <strong>Dijkstra's Algorithm:</strong> Optimal route calculations
+            based on time or cost.
+          </li>
+          <li>
+            <strong>Validation:</strong> Regex for ID and email formats, and
+            error control.
+          </li>
+        </ul>
+
+        <h3>Key Features:</h3>
+        <ul>
+          <li>Efficient search of travelers by ID or email.</li>
+          <li>City and connection registration with duplicate checks.</li>
+          <li>Flight management with uniqueness validation and updates.</li>
+          <li>
+            Optimal route calculation by time or cost, with filters for allowed
+            flight types.
+          </li>
+          <li>
+            Sorted listings of travelers by ID, email, category, or age range.
+          </li>
+        </ul>
+
+        <div class="galeria">
+          <figure>
+            <figcaption><strong>System</strong></figcaption>
+            <img src="imgs/sistemaDeAerolineas3.png" alt="System screenshot" />
+          </figure>
+          <figure>
+            <figcaption><strong>Data structures</strong></figcaption>
+            <img src="imgs/sistemaDeAerolineas2.png" alt="Structures" />
+          </figure>
+          <figure>
+            <figcaption><strong>Testing</strong></figcaption>
+            <img src="imgs/sistemaDeAerolineas.png" alt="Testing screenshot" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Project 3 -->
+      <section class="proyecto">
+        <h2>🍽️ Restaurant Order Management System</h2>
+        <p>
+          Desktop application developed in
+          <strong>Java with NetBeans</strong> to manage restaurant orders.
+          Customers can select menu items, add custom comments, and confirm
+          orders, while the system automatically calculates totals and
+          applicable discounts. The system follows object-oriented principles
+          such as <strong>Polymorphism</strong>, <strong>State</strong>,
+          <strong>Strategy</strong>, <strong>Expert</strong>, and a clear
+          <strong>layered architecture</strong> (UI, Controllers, Logic).
+        </p>
+
+        <p>
+          Besides the client interface, the system includes a specific interface
+          for <strong>managers</strong>, who receive confirmed orders, process
+          them by marking as <em>"prepared"</em> and then as
+          <em>"delivered"</em>. This provides full control of the workflow from
+          order to delivery.
+        </p>
+
+        <h3>Technologies and Concepts Used:</h3>
+        <ul>
+          <li>
+            <strong>Java + Swing:</strong> Desktop GUI with event handling and
+            interactive forms.
+          </li>
+          <li>
+            <strong>NetBeans IDE:</strong> Organized in packages and
+            event-driven development.
+          </li>
+          <li>
+            <strong>Polymorphism:</strong> Implemented with
+            <code>State</code> and <code>Strategy</code> patterns for discounts
+            and customer types.
+          </li>
+          <li>
+            <strong>Expert Pattern:</strong> Business logic encapsulated in
+            expert classes like <code>Manager</code> and <code>Order</code>.
+          </li>
+          <li>
+            <strong>Layered Architecture:</strong> Separation between UI,
+            controllers, business logic, and mock data.
+          </li>
+        </ul>
+
+        <h3>Key Features:</h3>
+        <ul>
+          <li>Client login with number and password.</li>
+          <li>Menu categorized by food types.</li>
+          <li>Order placement with custom comments.</li>
+          <li>
+            Automatic total, discount, and benefits calculation based on
+            customer type.
+          </li>
+          <li>Promotions applied dynamically.</li>
+          <li>Manager interface: order processing and delivery tracking.</li>
+          <li>
+            Observer for real-time updates on kitchen units, managers, and order
+            statuses.
+          </li>
+        </ul>
+
+        <div class="galeria">
+          <figure>
+            <figcaption>
+              <strong>Client interface:</strong> The customer can place orders
+              after logging in.
+            </figcaption>
+            <img
+              src="imgs/restauranteInterfazCliente2.png"
+              alt="Client interface"
+            />
+          </figure>
+
+          <figure>
+            <figcaption>
+              <strong>Manager order interface:</strong> The client logs in,
+              selects menu items, and sees the complete order with totals and
+              benefits applied.
+            </figcaption>
+            <img
+              src="imgs/restauranteInterfazGestor2.png"
+              alt="Manager Interface 1"
+            />
+            <img
+              src="imgs/restauranteInterfazGestor1.png"
+              alt="Manager Interface 2"
+            />
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
