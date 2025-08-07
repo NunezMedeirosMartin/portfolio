@@ -58,27 +58,30 @@ nav {
 
 /* Responsive nav */
 @media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 1rem;
-    display: none; /* Podés implementar un menú hamburguesa si querés */
+  .container {
+    flex-direction: column !important; /* Forzar columna */
+    align-items: center !important;    /* Centrar hijos */
   }
 
-  /* Centrar imagen en móvil */
   .image-section {
-    display: flex;
-    justify-content: center;
     width: 100%;
-    margin-bottom: 1rem; /* para separar de texto */
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 1rem;
   }
 
   .image-section img {
-    margin: 0 auto;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
 
-  /* Justificar texto en móvil */
-  .info-section p {
+  .info-section {
+    width: 100%;
     text-align: justify;
   }
 }
