@@ -7,294 +7,594 @@
     <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-container">
-        <a href="index.html" class="logo">Portfolio</a>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="proyectos.html">Projects</a></li>
-          <li><a href="sobreMi.html">About Me</a></li>
-        </ul>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      </div>
-    </nav>
+   <nav>
+  <div class="nav-container">
+    <a href="index.html" class="logo">Portfolio</a>
+
+    <ul class="nav-links">
+      <li>
+        <a href="index.html" data-en="Home" data-es="Inicio">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="skills.html"
+          data-en="Skills"
+          data-es="Conocimientos">
+          Skills
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="proyectos.html"
+          data-en="Projects"
+          data-es="Proyectos">
+          Projects
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="sobreMi.html"
+          data-en="About Me"
+          data-es="Sobre mí">
+          About Me
+        </a>
+      </li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="lang-toggle" onclick="changeLanguage()">
+        ES
+      </button>
+
+      <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+      </button>
+    </div>
+  </div>
+</nav>
 
     <main class="contenido">
-      <h1>Main Projects</h1>
+  <h1 data-en="Main Projects" data-es="Proyectos principales">
+    Main Projects
+  </h1>
 
-      <!-- Project 1 -->
-      <section class="proyecto">
-        <h2>🏃 Physical Activity Tracking App</h2>
-        <p>
-          This project is a web application built with
-          <strong>React</strong> that allows users to log and view their daily
-          physical activities. The system fetches stored records from a remote
-          backend, allowing features like total workout time per day, among
-          others.
-        </p>
+  <!-- Project 1 -->
+  <section class="proyecto">
+    <h2
+      data-en="🏃 Physical Activity Tracking App"
+      data-es="🏃 Aplicación de Seguimiento de Actividad Física">
+      🏃 Physical Activity Tracking App
+    </h2>
 
-        <h3>Technologies and Concepts Used:</h3>
-        <ul>
-          <li>
-            <strong>React JS:</strong> Dynamic and modular interface with
-            reusable components.
-          </li>
-          <li>
-            <strong>React Hooks (useState, useEffect):</strong> Local state
-            management and side effects such as API calls.
-          </li>
-          <li>
-            <strong>Fetch API:</strong> Communication with a remote endpoint
-            using credentials stored in <code>localStorage</code>.
-          </li>
-          <li>
-            <strong>Data Reduction:</strong> Total workout time calculated using
-            <code>reduce</code> on the activity log.
-          </li>
-          <li>
-            <strong>Modern JavaScript (ES6+):</strong> Use of arrow functions,
-            template literals, and destructuring for clean and efficient code.
-          </li>
-          <li>
-            <strong>Modular and Responsive CSS:</strong> Component-scoped styles
-            adapted to various devices.
-          </li>
-        </ul>
+    <p
+      data-en="This project is a web application built with <strong>React</strong> that allows users to log and view their daily physical activities. The system fetches stored records from a remote backend, allowing features like total workout time per day, among others."
+      data-es="Este proyecto es una aplicación web desarrollada con <strong>React</strong> que permite a los usuarios registrar y visualizar sus actividades físicas diarias. El sistema obtiene registros almacenados desde un backend remoto, permitiendo funcionalidades como el tiempo total de entrenamiento por día, entre otras.">
+      This project is a web application built with
+      <strong>React</strong> that allows users to log and view their daily
+      physical activities. The system fetches stored records from a remote
+      backend, allowing features like total workout time per day, among
+      others.
+    </p>
 
-        <h3>Key Features:</h3>
-        <ul>
-          <li>Automatic calculation of daily workout time.</li>
-          <li>Filtered record visualization by date.</li>
-          <li>
-            Basic authentication using <code>apikey</code> and
-            <code>userid</code> in custom headers.
-          </li>
-          <li>
-            Component separation: <code>DailyTime</code>, <code>Log</code>,
-            <code>Activity</code>, etc.
-          </li>
-        </ul>
+    <h3
+      data-en="Technologies and Concepts Used:"
+      data-es="Tecnologías y conceptos utilizados:">
+      Technologies and Concepts Used:
+    </h3>
 
-        <h3>Functionalities:</h3>
-        <div class="galeria">
-          <figure>
-            <figcaption>
-              <strong>User registration:</strong> Enter username, password, and
-              country.
-            </figcaption>
-            <img src="imgs/actFisica1.png" alt="Registration screen" />
-          </figure>
+    <ul>
+      <li>
+        <strong>React JS:</strong>
+        <span
+          data-en="Dynamic and modular interface with reusable components."
+          data-es="Interfaz dinámica y modular con componentes reutilizables.">
+          Dynamic and modular interface with reusable components.
+        </span>
+      </li>
 
-          <figure>
-            <figcaption>
-              <strong>Login:</strong> The user logs in with their credentials.
-            </figcaption>
-            <img src="imgs/actFisica2.png" alt="Login screen" />
-          </figure>
+      <li>
+        <strong>React Hooks (useState, useEffect):</strong>
+        <span
+          data-en="Local state management and side effects such as API calls."
+          data-es="Gestión de estado local y efectos secundarios como llamadas a APIs.">
+          Local state management and side effects such as API calls.
+        </span>
+      </li>
 
-          <figure>
-            <figcaption>
-              <strong>Log physical activity and view records:</strong> The user
-              selects the activity, date, and duration. Activities are added to
-              the log and can be filtered by date.
-            </figcaption>
-            <img src="imgs/actFisica4.png" alt="Activity input and log" />
-          </figure>
+      <li>
+        <strong>Fetch API:</strong>
+        <span
+          data-en="Communication with a remote endpoint using credentials stored in localStorage."
+          data-es="Comunicación con un endpoint remoto utilizando credenciales almacenadas en localStorage.">
+          Communication with a remote endpoint using credentials stored in <code>localStorage</code>.
+        </span>
+      </li>
 
-          <figure>
-            <figcaption>
-              <strong>Time tracked:</strong> Today's time and total tracked
-              time.
-            </figcaption>
-            <img src="imgs/actFisica5.png" alt="Time tracked" />
-          </figure>
+      <li>
+        <strong>Data Reduction:</strong>
+        <span
+          data-en="Total workout time calculated using reduce on the activity log."
+          data-es="Cálculo del tiempo total de entrenamiento usando reduce sobre el registro de actividades.">
+          Total workout time calculated using <code>reduce</code> on the activity log.
+        </span>
+      </li>
 
-          <figure>
-            <figcaption>
-              <strong>Activity session chart:</strong> Number of sessions per
-              activity type.
-            </figcaption>
-            <img src="imgs/actFisica6.png" alt="Activity chart" />
-          </figure>
+      <li>
+        <strong>Modern JavaScript (ES6+):</strong>
+        <span
+          data-en="Use of arrow functions, template literals, and destructuring for clean and efficient code."
+          data-es="Uso de arrow functions, template literals y destructuring para lograr un código limpio y eficiente.">
+          Use of arrow functions, template literals, and destructuring for clean and efficient code.
+        </span>
+      </li>
 
-          <figure>
-            <figcaption>
-              <strong>Exercise time chart:</strong> Minutes exercised in the
-              last 7 days.
-            </figcaption>
-            <img src="imgs/actFisica7.png" alt="Minutes chart" />
-          </figure>
+      <li>
+        <strong>Modular and Responsive CSS:</strong>
+        <span
+          data-en="Component-scoped styles adapted to various devices."
+          data-es="Estilos modulares adaptados a distintos dispositivos.">
+          Component-scoped styles adapted to various devices.
+        </span>
+      </li>
+    </ul>
 
-          <figure>
-            <figcaption>
-              <strong>Motivational message:</strong> The user receives
-              encouragement or congratulations depending on whether they reached
-              the recommended daily exercise time.
-            </figcaption>
-            <img src="imgs/actFisica8.png" alt="User message" />
-          </figure>
-        </div>
-      </section>
+    <h3 data-en="Key Features:" data-es="Características principales:">
+      Key Features:
+    </h3>
+
+    <ul>
+      <li
+        data-en="Automatic calculation of daily workout time."
+        data-es="Cálculo automático del tiempo diario de entrenamiento.">
+        Automatic calculation of daily workout time.
+      </li>
+
+      <li
+        data-en="Filtered record visualization by date."
+        data-es="Visualización de registros filtrados por fecha.">
+        Filtered record visualization by date.
+      </li>
+
+      <li
+        data-en="Basic authentication using apikey and userid in custom headers."
+        data-es="Autenticación básica utilizando apikey y userid en headers personalizados.">
+        Basic authentication using <code>apikey</code> and
+        <code>userid</code> in custom headers.
+      </li>
+
+      <li
+        data-en="Component separation: DailyTime, Log, Activity, etc."
+        data-es="Separación de componentes: DailyTime, Log, Activity, etc.">
+        Component separation: <code>DailyTime</code>, <code>Log</code>,
+        <code>Activity</code>, etc.
+      </li>
+    </ul>
+
+    <h3 data-en="Functionalities:" data-es="Funcionalidades:">
+      Functionalities:
+    </h3>
+
+    <div class="galeria">
+      <figure>
+        <figcaption
+          data-en="<strong>User registration:</strong> Enter username, password, and country."
+          data-es="<strong>Registro de usuario:</strong> Ingreso de usuario, contraseña y país.">
+          <strong>User registration:</strong> Enter username, password, and
+          country.
+        </figcaption>
+        <img src="imgs/actFisica1.png" alt="Registration screen" />
+      </figure>
+
+      <figure>
+        <figcaption
+          data-en="<strong>Login:</strong> The user logs in with their credentials."
+          data-es="<strong>Inicio de sesión:</strong> El usuario ingresa con sus credenciales.">
+          <strong>Login:</strong> The user logs in with their credentials.
+        </figcaption>
+        <img src="imgs/actFisica2.png" alt="Login screen" />
+      </figure>
+
+      <figure>
+        <figcaption
+          data-en="<strong>Log physical activity and view records:</strong> The user selects the activity, date, and duration. Activities are added to the log and can be filtered by date."
+          data-es="<strong>Registro de actividad física y visualización:</strong> El usuario selecciona la actividad, fecha y duración. Las actividades se agregan al registro y pueden filtrarse por fecha.">
+          <strong>Log physical activity and view records:</strong> The user
+          selects the activity, date, and duration. Activities are added to
+          the log and can be filtered by date.
+        </figcaption>
+        <img src="imgs/actFisica4.png" alt="Activity input and log" />
+      </figure>
+
+      <figure>
+        <figcaption
+          data-en="<strong>Time tracked:</strong> Today's time and total tracked time."
+          data-es="<strong>Tiempo registrado:</strong> Tiempo de hoy y tiempo total registrado.">
+          <strong>Time tracked:</strong> Today's time and total tracked
+          time.
+        </figcaption>
+        <img src="imgs/actFisica5.png" alt="Time tracked" />
+      </figure>
+
+      <figure>
+        <figcaption
+          data-en="<strong>Activity session chart:</strong> Number of sessions per activity type."
+          data-es="<strong>Gráfico de sesiones:</strong> Cantidad de sesiones por tipo de actividad.">
+          <strong>Activity session chart:</strong> Number of sessions per
+          activity type.
+        </figcaption>
+        <img src="imgs/actFisica6.png" alt="Activity chart" />
+      </figure>
+
+      <figure>
+        <figcaption
+          data-en="<strong>Exercise time chart:</strong> Minutes exercised in the last 7 days."
+          data-es="<strong>Gráfico de tiempo de ejercicio:</strong> Minutos ejercitados en los últimos 7 días.">
+          <strong>Exercise time chart:</strong> Minutes exercised in the
+          last 7 days.
+        </figcaption>
+        <img src="imgs/actFisica7.png" alt="Minutes chart" />
+      </figure>
+
+      <figure>
+        <figcaption
+          data-en="<strong>Motivational message:</strong> The user receives encouragement or congratulations depending on whether they reached the recommended daily exercise time."
+          data-es="<strong>Mensaje motivacional:</strong> El usuario recibe ánimo o felicitaciones según si alcanzó el tiempo diario recomendado de ejercicio.">
+          <strong>Motivational message:</strong> The user receives
+          encouragement or congratulations depending on whether they reached
+          the recommended daily exercise time.
+        </figcaption>
+        <img src="imgs/actFisica8.png" alt="User message" />
+      </figure>
+    </div>
+  </section>
 
       <!-- Project 2 -->
-      <section class="proyecto">
-        <h2>✈️ Travel and Flight Management System</h2>
-        <p>
-          This project is a <strong>Java</strong> system that manages travelers,
-          cities, connections, and flights, with advanced search and optimal
-          route calculation features. The backend is based on data structures
-          like binary search trees (BST) and directed graphs.
-        </p>
+<section class="proyecto">
 
-        <h3>Technologies and Concepts Used:</h3>
-        <ul>
-          <li>
-            <strong>Java 17:</strong> Object-oriented implementation with
-            exception handling and validations.
-          </li>
-          <li>
-            <strong>Data Structures:</strong> BSTs for efficient ordering and
-            O(log n) lookups.
-          </li>
-          <li>
-            <strong>Directed Graphs:</strong> Cities and connections modeled
-            with flights as multi-edges.
-          </li>
-          <li>
-            <strong>Dijkstra's Algorithm:</strong> Optimal route calculations
-            based on time or cost.
-          </li>
-          <li>
-            <strong>Validation:</strong> Regex for ID and email formats, and
-            error control.
-          </li>
-        </ul>
+  <h2
+    data-en="✈️ Travel and Flight Management System"
+    data-es="✈️ Sistema de Gestión de Viajes y Vuelos">
+    ✈️ Travel and Flight Management System
+  </h2>
 
-        <h3>Key Features:</h3>
-        <ul>
-          <li>Efficient search of travelers by ID or email.</li>
-          <li>City and connection registration with duplicate checks.</li>
-          <li>Flight management with uniqueness validation and updates.</li>
-          <li>
-            Optimal route calculation by time or cost, with filters for allowed
-            flight types.
-          </li>
-          <li>
-            Sorted listings of travelers by ID, email, category, or age range.
-          </li>
-        </ul>
+  <p
+    data-en="This project is a <strong>Java</strong> system that manages travelers, cities, connections, and flights, with advanced search and optimal route calculation features. The backend is based on data structures like binary search trees (BST) and directed graphs."
+    data-es="Este proyecto es un sistema en <strong>Java</strong> que administra viajeros, ciudades, conexiones y vuelos, con funcionalidades avanzadas de búsqueda y cálculo de rutas óptimas. El backend está basado en estructuras de datos como árboles binarios de búsqueda (BST) y grafos dirigidos.">
 
-        <div class="galeria">
-          <figure>
-            <figcaption><strong>System</strong></figcaption>
-            <img src="imgs/sistemaDeAerolineas3.png" alt="System screenshot" />
-          </figure>
-          <figure>
-            <figcaption><strong>Data structures</strong></figcaption>
-            <img src="imgs/sistemaDeAerolineas2.png" alt="Structures" />
-          </figure>
-          <figure>
-            <figcaption><strong>Testing</strong></figcaption>
-            <img src="imgs/sistemaDeAerolineas.png" alt="Testing screenshot" />
-          </figure>
-        </div>
-      </section>
+    This project is a <strong>Java</strong> system that manages travelers,
+    cities, connections, and flights, with advanced search and optimal
+    route calculation features. The backend is based on data structures
+    like binary search trees (BST) and directed graphs.
+  </p>
 
+  <h3
+    data-en="Technologies and Concepts Used:"
+    data-es="Tecnologías y conceptos utilizados:">
+    Technologies and Concepts Used:
+  </h3>
+
+  <ul>
+    <li>
+      <strong>Java 17:</strong>
+
+      <span
+        data-en="Object-oriented implementation with exception handling and validations."
+        data-es="Implementación orientada a objetos con manejo de excepciones y validaciones.">
+        Object-oriented implementation with exception handling and validations.
+      </span>
+    </li>
+
+    <li>
+      <strong>Data Structures:</strong>
+
+      <span
+        data-en="BSTs for efficient ordering and O(log n) lookups."
+        data-es="Árboles binarios de búsqueda para ordenamiento eficiente y búsquedas O(log n).">
+        BSTs for efficient ordering and O(log n) lookups.
+      </span>
+    </li>
+
+    <li>
+      <strong>Directed Graphs:</strong>
+
+      <span
+        data-en="Cities and connections modeled with flights as multi-edges."
+        data-es="Ciudades y conexiones modeladas con vuelos como multi-aristas.">
+        Cities and connections modeled with flights as multi-edges.
+      </span>
+    </li>
+
+    <li>
+      <strong>Dijkstra's Algorithm:</strong>
+
+      <span
+        data-en="Optimal route calculations based on time or cost."
+        data-es="Cálculo de rutas óptimas basado en tiempo o costo.">
+        Optimal route calculations based on time or cost.
+      </span>
+    </li>
+
+    <li>
+      <strong>Validation:</strong>
+
+      <span
+        data-en="Regex for ID and email formats, and error control."
+        data-es="Uso de expresiones regulares para formatos de cédula y correo electrónico, además de control de errores.">
+        Regex for ID and email formats, and error control.
+      </span>
+    </li>
+  </ul>
+
+  <h3
+    data-en="Key Features:"
+    data-es="Características principales:">
+    Key Features:
+  </h3>
+
+  <ul>
+    <li
+      data-en="Efficient search of travelers by ID or email."
+      data-es="Búsqueda eficiente de viajeros por cédula o correo electrónico.">
+      Efficient search of travelers by ID or email.
+    </li>
+
+    <li
+      data-en="City and connection registration with duplicate checks."
+      data-es="Registro de ciudades y conexiones con validación de duplicados.">
+      City and connection registration with duplicate checks.
+    </li>
+
+    <li
+      data-en="Flight management with uniqueness validation and updates."
+      data-es="Gestión de vuelos con validación de unicidad y actualizaciones.">
+      Flight management with uniqueness validation and updates.
+    </li>
+
+    <li
+      data-en="Optimal route calculation by time or cost, with filters for allowed flight types."
+      data-es="Cálculo de rutas óptimas por tiempo o costo, con filtros para tipos de vuelo permitidos.">
+      Optimal route calculation by time or cost, with filters for allowed
+      flight types.
+    </li>
+
+    <li
+      data-en="Sorted listings of travelers by ID, email, category, or age range."
+      data-es="Listados ordenados de viajeros por cédula, correo, categoría o rango de edad.">
+      Sorted listings of travelers by ID, email, category, or age range.
+    </li>
+  </ul>
+
+  <div class="galeria">
+
+    <figure>
+      <figcaption
+        data-en="<strong>System</strong>"
+        data-es="<strong>Sistema</strong>">
+        <strong>System</strong>
+      </figcaption>
+
+      <img src="imgs/sistemaDeAerolineas3.png" alt="System screenshot" />
+    </figure>
+
+    <figure>
+      <figcaption
+        data-en="<strong>Data structures</strong>"
+        data-es="<strong>Estructuras de datos</strong>">
+        <strong>Data structures</strong>
+      </figcaption>
+
+      <img src="imgs/sistemaDeAerolineas2.png" alt="Structures" />
+    </figure>
+
+    <figure>
+      <figcaption
+        data-en="<strong>Testing</strong>"
+        data-es="<strong>Pruebas</strong>">
+        <strong>Testing</strong>
+      </figcaption>
+
+      <img src="imgs/sistemaDeAerolineas.png" alt="Testing screenshot" />
+    </figure>
+
+  </div>
+</section>
       <!-- Project 3 -->
-      <section class="proyecto">
-        <h2>🍽️ Restaurant Order Management System</h2>
-        <p>
-          Desktop application developed in
-          <strong>Java with NetBeans</strong> to manage restaurant orders.
-          Customers can select menu items, add custom comments, and confirm
-          orders, while the system automatically calculates totals and
-          applicable discounts. The system follows object-oriented principles
-          such as <strong>Polymorphism</strong>, <strong>State</strong>,
-          <strong>Strategy</strong>, <strong>Expert</strong>, and a clear
-          <strong>layered architecture</strong> (UI, Controllers, Logic).
-        </p>
+<section class="proyecto">
 
-        <p>
-          Besides the client interface, the system includes a specific interface
-          for <strong>managers</strong>, who receive confirmed orders, process
-          them by marking as <em>"prepared"</em> and then as
-          <em>"delivered"</em>. This provides full control of the workflow from
-          order to delivery.
-        </p>
+  <h2
+    data-en="🍽️ Restaurant Order Management System"
+    data-es="🍽️ Sistema de Gestión de Pedidos para Restaurante">
+    🍽️ Restaurant Order Management System
+  </h2>
 
-        <h3>Technologies and Concepts Used:</h3>
-        <ul>
-          <li>
-            <strong>Java + Swing:</strong> Desktop GUI with event handling and
-            interactive forms.
-          </li>
-          <li>
-            <strong>NetBeans IDE:</strong> Organized in packages and
-            event-driven development.
-          </li>
-          <li>
-            <strong>Polymorphism:</strong> Implemented with
-            <code>State</code> and <code>Strategy</code> patterns for discounts
-            and customer types.
-          </li>
-          <li>
-            <strong>Expert Pattern:</strong> Business logic encapsulated in
-            expert classes like <code>Manager</code> and <code>Order</code>.
-          </li>
-          <li>
-            <strong>Layered Architecture:</strong> Separation between UI,
-            controllers, business logic, and mock data.
-          </li>
-        </ul>
+  <p
+    data-en="Desktop application developed in <strong>Java with NetBeans</strong> to manage restaurant orders. Customers can select menu items, add custom comments, and confirm orders, while the system automatically calculates totals and applicable discounts. The system follows object-oriented principles such as <strong>Polymorphism</strong>, <strong>State</strong>, <strong>Strategy</strong>, <strong>Expert</strong>, and a clear <strong>layered architecture</strong> (UI, Controllers, Logic)."
+    data-es="Aplicación de escritorio desarrollada en <strong>Java con NetBeans</strong> para gestionar pedidos de restaurante. Los clientes pueden seleccionar productos del menú, agregar comentarios personalizados y confirmar pedidos, mientras el sistema calcula automáticamente totales y descuentos aplicables. El sistema sigue principios orientados a objetos como <strong>Polymorphism</strong>, <strong>State</strong>, <strong>Strategy</strong>, <strong>Expert</strong> y una clara <strong>arquitectura en capas</strong> (UI, Controllers, Logic).">
 
-        <h3>Key Features:</h3>
-        <ul>
-          <li>Client login with number and password.</li>
-          <li>Menu categorized by food types.</li>
-          <li>Order placement with custom comments.</li>
-          <li>
-            Automatic total, discount, and benefits calculation based on
-            customer type.
-          </li>
-          <li>Promotions applied dynamically.</li>
-          <li>Manager interface: order processing and delivery tracking.</li>
-          <li>
-            Observer for real-time updates on kitchen units, managers, and order
-            statuses.
-          </li>
-        </ul>
+    Desktop application developed in
+    <strong>Java with NetBeans</strong> to manage restaurant orders.
+    Customers can select menu items, add custom comments, and confirm
+    orders, while the system automatically calculates totals and
+    applicable discounts. The system follows object-oriented principles
+    such as <strong>Polymorphism</strong>, <strong>State</strong>,
+    <strong>Strategy</strong>, <strong>Expert</strong>, and a clear
+    <strong>layered architecture</strong> (UI, Controllers, Logic).
+  </p>
 
-        <div class="galeria">
-          <figure>
-            <figcaption>
-              <strong>Client interface:</strong> The customer can place orders
-              after logging in.
-            </figcaption>
-            <img
-              src="imgs/restauranteInterfazCliente2.png"
-              alt="Client interface"
-            />
-          </figure>
+  <p
+    data-en="Besides the client interface, the system includes a specific interface for <strong>managers</strong>, who receive confirmed orders, process them by marking as <em>'prepared'</em> and then as <em>'delivered'</em>. This provides full control of the workflow from order to delivery."
+    data-es="Además de la interfaz del cliente, el sistema incluye una interfaz específica para <strong>gestores</strong>, quienes reciben los pedidos confirmados, los procesan marcándolos como <em>'preparados'</em> y luego como <em>'entregados'</em>. Esto brinda un control completo del flujo desde el pedido hasta la entrega.">
 
-          <figure>
-            <figcaption>
-              <strong>Manager order interface:</strong> The client logs in,
-              selects menu items, and sees the complete order with totals and
-              benefits applied.
-            </figcaption>
-            <img
-              src="imgs/restauranteInterfazGestor2.png"
-              alt="Manager Interface 1"
-            />
-            <img
-              src="imgs/restauranteInterfazGestor1.png"
-              alt="Manager Interface 2"
-            />
-          </figure>
-        </div>
-      </section>
-    </main>
+    Besides the client interface, the system includes a specific interface
+    for <strong>managers</strong>, who receive confirmed orders, process
+    them by marking as <em>"prepared"</em> and then as
+    <em>"delivered"</em>. This provides full control of the workflow from
+    order to delivery.
+  </p>
 
-    <script src="script.js"></script>
-  </body>
+  <h3
+    data-en="Technologies and Concepts Used:"
+    data-es="Tecnologías y conceptos utilizados:">
+    Technologies and Concepts Used:
+  </h3>
+
+  <ul>
+
+    <li>
+      <strong>Java + Swing:</strong>
+
+      <span
+        data-en="Desktop GUI with event handling and interactive forms."
+        data-es="Interfaz gráfica de escritorio con manejo de eventos y formularios interactivos.">
+        Desktop GUI with event handling and interactive forms.
+      </span>
+    </li>
+
+    <li>
+      <strong>NetBeans IDE:</strong>
+
+      <span
+        data-en="Organized in packages and event-driven development."
+        data-es="Organización en paquetes y desarrollo orientado a eventos.">
+        Organized in packages and event-driven development.
+      </span>
+    </li>
+
+    <li>
+      <strong>Polymorphism:</strong>
+
+      <span
+        data-en="Implemented with State and Strategy patterns for discounts and customer types."
+        data-es="Implementado mediante patrones State y Strategy para descuentos y tipos de clientes.">
+        Implemented with <code>State</code> and <code>Strategy</code> patterns for discounts
+        and customer types.
+      </span>
+    </li>
+
+    <li>
+      <strong>Expert Pattern:</strong>
+
+      <span
+        data-en="Business logic encapsulated in expert classes like Manager and Order."
+        data-es="Lógica de negocio encapsulada en clases expertas como Manager y Order.">
+        Business logic encapsulated in expert classes like <code>Manager</code> and <code>Order</code>.
+      </span>
+    </li>
+
+    <li>
+      <strong>Layered Architecture:</strong>
+
+      <span
+        data-en="Separation between UI, controllers, business logic, and mock data."
+        data-es="Separación entre UI, controladores, lógica de negocio y datos simulados.">
+        Separation between UI, controllers, business logic, and mock data.
+      </span>
+    </li>
+
+  </ul>
+
+  <h3
+    data-en="Key Features:"
+    data-es="Características principales:">
+    Key Features:
+  </h3>
+
+  <ul>
+
+    <li
+      data-en="Client login with number and password."
+      data-es="Inicio de sesión del cliente mediante número y contraseña.">
+      Client login with number and password.
+    </li>
+
+    <li
+      data-en="Menu categorized by food types."
+      data-es="Menú categorizado por tipos de comida.">
+      Menu categorized by food types.
+    </li>
+
+    <li
+      data-en="Order placement with custom comments."
+      data-es="Realización de pedidos con comentarios personalizados.">
+      Order placement with custom comments.
+    </li>
+
+    <li
+      data-en="Automatic total, discount, and benefits calculation based on customer type."
+      data-es="Cálculo automático de totales, descuentos y beneficios según el tipo de cliente.">
+      Automatic total, discount, and benefits calculation based on
+      customer type.
+    </li>
+
+    <li
+      data-en="Promotions applied dynamically."
+      data-es="Promociones aplicadas dinámicamente.">
+      Promotions applied dynamically.
+    </li>
+
+    <li
+      data-en="Manager interface: order processing and delivery tracking."
+      data-es="Interfaz de gestor: procesamiento de pedidos y seguimiento de entregas.">
+      Manager interface: order processing and delivery tracking.
+    </li>
+
+    <li
+      data-en="Observer for real-time updates on kitchen units, managers, and order statuses."
+      data-es="Observer para actualizaciones en tiempo real sobre unidades de cocina, gestores y estados de pedidos.">
+      Observer for real-time updates on kitchen units, managers, and order
+      statuses.
+    </li>
+
+  </ul>
+
+  <div class="galeria">
+
+    <figure>
+      <figcaption
+        data-en="<strong>Client interface:</strong> The customer can place orders after logging in."
+        data-es="<strong>Interfaz del cliente:</strong> El cliente puede realizar pedidos luego de iniciar sesión.">
+
+        <strong>Client interface:</strong> The customer can place orders
+        after logging in.
+      </figcaption>
+
+      <img
+        src="imgs/restauranteInterfazCliente2.png"
+        alt="Client interface"
+      />
+    </figure>
+
+    <figure>
+      <figcaption
+        data-en="<strong>Manager order interface:</strong> The client logs in, selects menu items, and sees the complete order with totals and benefits applied."
+        data-es="<strong>Interfaz de pedidos del gestor:</strong> El cliente inicia sesión, selecciona productos y visualiza el pedido completo con totales y beneficios aplicados.">
+
+        <strong>Manager order interface:</strong> The client logs in,
+        selects menu items, and sees the complete order with totals and
+        benefits applied.
+      </figcaption>
+
+      <img
+        src="imgs/restauranteInterfazGestor2.png"
+        alt="Manager Interface 1"
+      />
+
+      <img
+        src="imgs/restauranteInterfazGestor1.png"
+        alt="Manager Interface 2"
+      />
+    </figure>
+
+  </div>
+
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
 </html>

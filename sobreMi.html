@@ -1,100 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
-    <link rel="stylesheet" href="estilos.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="nav-container">
-        <a href="index.html" class="logo">Portfolio</a>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="proyectos.html">Projects</a></li>
-          <li><a href="sobreMi.html">About Me</a></li>
-        </ul>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Portfolio</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" data-en="Home" data-es="Inicio">Home</a></li>
+        <li><a href="skills.html" data-en="Skills" data-es="Conocimientos">Skills</a></li>
+        <li><a href="proyectos.html" data-en="Projects" data-es="Proyectos">Projects</a></li>
+        <li><a href="sobreMi.html" data-en="About Me" data-es="Sobre mí">About Me</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" onclick="changeLanguage()">
+          ES
+        </button>
+
+        <button class="menu-toggle" onclick="toggleMenu()">
+          ☰
+        </button>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <main class="contenido">
-      <section class="proyecto">
-        <h2>Personal Introduction</h2>
-        <p>
-          I am a curious and dedicated person with a strong interest in
-          continuously learning and growing professionally. I'm passionate about
-          sports, audiovisual production, and content editing. I especially
-          enjoy being in front of the computer exploring new tools,
-          technologies, and creative ways to build. That blend between technical
-          and creative defines a big part of who I am.
-        </p>
-      </section>
+  <main class="contenido">
 
-      <section class="proyecto">
-        <h2>Professional Profile</h2>
-        <p>
-          I am currently focused on software development, where I seek to apply
-          my knowledge and constantly expand it. I'm motivated to be part of
-          challenging projects where I can actively collaborate in building
-          solutions and grow alongside others. I am perseverant, eager to build
-          a solid professional path by contributing with responsibility,
-          creativity, and dedication at every step. I'm interested in
-          participating in projects with a positive impact, where I can continue
-          to evolve as a developer and as a person.
-        </p>
-      </section>
+    <section class="proyecto">
+      <h2
+        data-en="Personal Introduction"
+        data-es="Introducción personal">
+        Personal Introduction
+      </h2>
 
-      <section class="proyecto">
-        <h2>Values and Work Ethic</h2>
-        <p>
-          I believe teamwork is key, and I strive to foster a positive,
-          respectful, and productive environment. I surround myself with
-          proactive people who value effort, commitment, and constant
-          self-improvement. I learn a lot from those around me: I’m inspired by
-          their attitudes, drive, and ways of facing challenges. I firmly
-          believe that growth is a collective journey, and being around
-          motivated people fuels our own desire to improve.
-        </p>
-      </section>
+      <p
+        data-en="I am a curious and dedicated person with a strong interest in continuously learning and growing professionally. I'm passionate about sports, audiovisual production, and content editing. I especially enjoy being in front of the computer exploring new tools, technologies, and creative ways to build. That blend between technical and creative defines a big part of who I am."
+        data-es="Soy una persona curiosa y dedicada, con un gran interés en aprender continuamente y crecer profesionalmente. Me apasionan los deportes, la producción audiovisual y la edición de contenido. Disfruto especialmente estar frente a la computadora explorando nuevas herramientas, tecnologías y formas creativas de construir. Esa combinación entre lo técnico y lo creativo define gran parte de quién soy.">
+        I am a curious and dedicated person with a strong interest in continuously learning and growing professionally. I'm passionate about sports, audiovisual production, and content editing. I especially enjoy being in front of the computer exploring new tools, technologies, and creative ways to build. That blend between technical and creative defines a big part of who I am.
+      </p>
+    </section>
 
-      <section class="proyecto">
-        <h2>Career in Progress</h2>
-        <p>
-          I have currently completed the fourth semester of my degree. I am
-          starting to take an elective course and will then begin my final
-          project, which I am currently reflecting on and planning. I have
-          learned a great deal throughout this degree program and am grateful to
-          ORT University for the high-quality education it provides to its
-          students. Not only has it taught me valuable skills, but it has also
-          shown me how much there is still to learn. I am fully aware that ORT
-          University has been a fundamental pillar in my education, equipping me
-          with the tools to face this expansive world. I am eager and excited to
-          dive in and apply what I have learned.
-        </p>
-      </section>
+    <section class="proyecto">
+      <h2
+        data-en="Professional Profile"
+        data-es="Perfil profesional">
+        Professional Profile
+      </h2>
 
-      <section class="proyecto">
-        <h2>Languages and Additional Skills</h2>
-        <ul>
-          <li>
-            <strong>English:</strong> Good level that allows me to access
-            technical documentation, international resources, and communicate in
-            multicultural environments.
-          </li>
-          <li>
-            <strong>Self-learning ability:</strong> I enjoy researching, trying
-            out new technologies, and learning from every experience.
-          </li>
-          <li>
-            <strong>Creativity and critical thinking:</strong> I’m always
-            looking for solutions and improvements.
-          </li>
-        </ul>
-      </section>
-    </main>
+      <p
+        data-en="I am currently focused on software development, where I seek to apply my knowledge and constantly expand it. I'm motivated to be part of challenging projects where I can actively collaborate in building solutions and grow alongside others. I am perseverant, eager to build a solid professional path by contributing with responsibility, creativity, and dedication at every step."
+        data-es="Actualmente estoy enfocado en el desarrollo de software, donde busco aplicar mis conocimientos y expandirlos constantemente. Me motiva formar parte de proyectos desafiantes en los que pueda colaborar activamente construyendo soluciones y creciendo junto a otras personas. Soy perseverante y tengo ganas de construir un camino profesional sólido aportando responsabilidad, creatividad y dedicación en cada etapa.">
+        I am currently focused on software development, where I seek to apply my knowledge and constantly expand it. I'm motivated to be part of challenging projects where I can actively collaborate in building solutions and grow alongside others. I am perseverant, eager to build a solid professional path by contributing with responsibility, creativity, and dedication at every step.
+      </p>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <section class="proyecto">
+      <h2
+        data-en="Values and Work Ethic"
+        data-es="Valores y ética de trabajo">
+        Values and Work Ethic
+      </h2>
+
+      <p
+        data-en="I believe teamwork is key, and I strive to foster a positive, respectful, and productive environment. I surround myself with proactive people who value effort, commitment, and constant self-improvement. I firmly believe that growth is a collective journey, and being around motivated people fuels our own desire to improve."
+        data-es="Creo que el trabajo en equipo es fundamental y busco fomentar un entorno positivo, respetuoso y productivo. Me rodeo de personas proactivas que valoran el esfuerzo, el compromiso y la mejora constante. Creo firmemente que el crecimiento es un camino colectivo y que estar rodeado de personas motivadas impulsa nuestras propias ganas de mejorar.">
+        I believe teamwork is key, and I strive to foster a positive, respectful, and productive environment. I surround myself with proactive people who value effort, commitment, and constant self-improvement. I firmly believe that growth is a collective journey, and being around motivated people fuels our own desire to improve.
+      </p>
+    </section>
+
+    <section class="proyecto">
+      <h2
+        data-en="Career in Progress"
+        data-es="Carrera en progreso">
+        Career in Progress
+      </h2>
+
+      <p
+        data-en="I have currently completed the fourth semester of my degree. I am starting to take an elective course and will then begin my final project, which I am currently reflecting on and planning. I have learned a great deal throughout this degree program and I am eager to apply everything I have learned in real-world projects."
+        data-es="Actualmente he completado el cuarto semestre de mi carrera. Estoy comenzando una materia optativa y luego iniciaré mi proyecto final, el cual estoy planificando actualmente. He aprendido muchísimo durante esta carrera y tengo muchas ganas de aplicar todo lo aprendido en proyectos reales.">
+        I have currently completed the fourth semester of my degree. I am starting to take an elective course and will then begin my final project, which I am currently reflecting on and planning. I have learned a great deal throughout this degree program and I am eager to apply everything I have learned in real-world projects.
+      </p>
+    </section>
+
+    <section class="proyecto">
+      <h2
+        data-en="Languages and Additional Skills"
+        data-es="Idiomas y habilidades adicionales">
+        Languages and Additional Skills
+      </h2>
+
+      <ul>
+        <li>
+          <strong
+            data-en="English:"
+            data-es="Inglés:">
+            English:
+          </strong>
+
+          <span
+            data-en="Good level that allows me to access technical documentation, international resources, and communicate in multicultural environments."
+            data-es="Buen nivel que me permite acceder a documentación técnica, recursos internacionales y comunicarme en entornos multiculturales.">
+            Good level that allows me to access technical documentation, international resources, and communicate in multicultural environments.
+          </span>
+        </li>
+
+        <li>
+          <strong
+            data-en="Self-learning ability:"
+            data-es="Capacidad autodidacta:">
+            Self-learning ability:
+          </strong>
+
+          <span
+            data-en="I enjoy researching, trying out new technologies, and learning from every experience."
+            data-es="Disfruto investigar, probar nuevas tecnologías y aprender de cada experiencia.">
+            I enjoy researching, trying out new technologies, and learning from every experience.
+          </span>
+        </li>
+
+        <li>
+          <strong
+            data-en="Creativity and critical thinking:"
+            data-es="Creatividad y pensamiento crítico:">
+            Creativity and critical thinking:
+          </strong>
+
+          <span
+            data-en="I’m always looking for solutions and improvements."
+            data-es="Siempre estoy buscando soluciones y mejoras.">
+            I’m always looking for solutions and improvements.
+          </span>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
